@@ -1,7 +1,6 @@
 package hu.ulyssys.java.course.database.task.dao;
 
 import hu.ulyssys.java.course.database.task.entity.Author;
-import hu.ulyssys.java.course.database.task.entity.BlogPost;
 
 import javax.persistence.EntityManager;
 import javax.persistence.Persistence;
@@ -41,5 +40,4 @@ public class AuthorDAO {
         query.setParameter("firstName", firstname);
         return query.getResultList();
     }
-
 }

@@ -1,0 +1,11 @@
+CREATE TABLE blog_post
+(
+  id serial NOT NULL,
+  title character varying(255) COLLATE pg_catalog."default",
+  content character varying(255) COLLATE pg_catalog."default",
+  category character varying(255) COLLATE pg_catalog."default",
+  created_date date NOT NULL,
+  last_modified_date date NOT NULL,
+  published_date date NOT NULL,
+  CONSTRAINT blogpost_pkey PRIMARY KEY (id)
+)
